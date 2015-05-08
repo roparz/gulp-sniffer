@@ -2,7 +2,10 @@
   "name": "gulp-sniffer",
   "description": "Files content sniffer",
   "version": "0.0.1",
-  "repository": "roparz/gulp-sniffer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roparz/gulp-sniffer"
+  },
   "author": "Christophe Gourmelon <christophe@roparz.me> (http://roparz.me/)",
   "files": [
     "index.js"
@@ -27,5 +30,14 @@
       "type": "MIT",
       "url": "http://github.com/roparz/gulp-sniffer/raw/master/LICENSE"
     }
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/roparz/gulp-sniffer/issues"
+  },
+  "homepage": "https://github.com/roparz/gulp-sniffer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
 }

@@ -5,21 +5,23 @@ through = require('through2');
 PluginError = require('gulp-util').PluginError;
 
 module.exports = function(checks) {
-  var _throw, stream;
+  var stream;
   if (checks == null) {
     checks = {};
   }
-  _throw = function(msg) {
-    throw new PluginError('gulp-sniffer', msg);
-  };
   stream = through.obj(function(file, enc, cb) {
-    var content, msg, test;
+    var content, errors, msg, test;
     content = file.contents.toString();
+    errors = [];
     for (msg in checks) {
       test = checks[msg];
       if (test(content)) {
-        _throw(msg);
+        errors.push(msg);
       }
+    }
+    if (errors.length) {
+      msg = "in file " + file.path + ":\n - " + (errors.join('\n - '));
+      throw new PluginError('gulp-sniffer', msg);
     }
     this.push(file);
     return cb();

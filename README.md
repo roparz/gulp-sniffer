@@ -6,7 +6,7 @@
 </tr>
 <tr>
 <td>Description</td>
-<td>Throw error if the passed function returns false</td>
+<td>Throw error if the passed function returns true</td>
 </tr>
 <tr>
 <td>Node Version</td>

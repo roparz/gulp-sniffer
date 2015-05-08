@@ -1,8 +1,12 @@
+# gulp-sniffer
+
+> sniffer plugin for [gulp](https://github.com/gulpjs/gulp)
+
 ## Information
 
 <table>
 <tr>
-<td>Package</td><td>gulp-sniffer</td>
+<td>Package</td><td>https://www.npmjs.com/package/gulp-sniffer</td>
 </tr>
 <tr>
 <td>Description</td>
@@ -13,6 +17,12 @@
 <td>>= 0.10</td>
 </tr>
 </table>
+
+## Installation
+
+```
+npm install --save-dev gulp-sniffer
+```
 
 ## Usage
 
